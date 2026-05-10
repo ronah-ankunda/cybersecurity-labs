@@ -4,7 +4,7 @@ Hands-on security labs completed as part of my MSc in Cybersecurity at Hood Coll
 
 ---
 
-## Digital Forensics
+Digital Forensics
 
 **Clampet Forensic Investigation**  
 Full investigation using AccessData FTK on the Clampet18.aff disk image. Identified primary suspect through browser cache artifacts, recovered moonshine recipes, a password-protected customer spreadsheet, and internet search history corroborating witness statements.  
@@ -16,7 +16,7 @@ Tools: FTK Imager, Registry Viewer
 
 ---
 
-## Penetration Testing
+Penetration Testing
 
 **Metasploitable2: SMB Exploitation**  
 Enumerated SMB with enum4linux, identified Samba 3.0.20-Debian, exploited CVE-2007-2447 for a reverse shell. Cracked password hashes with John the Ripper.  
