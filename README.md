@@ -22,9 +22,13 @@ Penetration Testing
 Enumerated SMB with enum4linux, identified Samba 3.0.20-Debian, exploited CVE-2007-2447 for a reverse shell. Cracked password hashes with John the Ripper.  
 Tools: Metasploit, Nmap, enum4linux, John the Ripper
 
-**DVWA: Web Application Command Injection**  
-Exploited command injection in DVWA. Analyzed PHP source code and injected OS commands to enumerate system users.  
-Tools: Burp Suite, Kali Linux
+**DVWA: Web Application Security Assessment**
+Exploited SQL injection vulnerabilities in DVWA running on Metasploitable2. Used union-based SQL injection to extract database version, usernames, and MD5 password hashes from the users table. Cracked extracted hashes using John the Ripper with the rockyou.txt wordlist, successfully recovering passwords including common weak credentials.
+Tools: Kali Linux, DVWA, John the Ripper
+
+![SQL Injection Results](dvwa-sql-injection.png)
+![Password Hashes Extracted](dvwa-password-hashes.png)
+![John the Ripper Password Cracking](john-password-cracking.png)
 
 **Network Traffic Analysis: Wireshark**
 Analyzed packet captures to identify web server IP (172.17.0.2), user agent (Firefox 86.0 on Linux x86_64), proxy server IP (172.17.0.3), and proxy port (3128) using HTTP and TCP filters.
