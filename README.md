@@ -1,7 +1,7 @@
 Cybersecurity Labs
 Hands-on security labs completed as part of my MSc in Cybersecurity at Hood College. Work spans digital forensics, penetration testing, network security, and security operations.
 ---
-Digital Forensics 
+Digital Forensics
 Clampet Forensic Investigation
 Full investigation using AccessData FTK on the Clampet18.aff disk image. Identified primary suspect through browser cache artifacts, recovered moonshine recipes, a password-protected customer spreadsheet, and internet search history corroborating witness statements. Produced a structured forensic report with timestamped evidence.
 Tools: AccessData FTK, FTK Imager
