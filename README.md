@@ -26,6 +26,9 @@ Tools: Metasploit, Nmap, enum4linux, John the Ripper
 Exploited command injection in DVWA. Analyzed PHP source code and injected OS commands to enumerate system users.  
 Tools: Burp Suite, Kali Linux
 
-**Wireless Network Exploitation**  
-Analyzed packet capture in Wireshark. Used aircrack-ng to crack wireless password.  
-Tools: Wireshark, aircrack-ng, Kali Linux
+**Network Traffic Analysis: Wireshark**
+Analyzed packet captures to identify web server IP (172.17.0.2), user agent (Firefox 86.0 on Linux x86_64), proxy server IP (172.17.0.3), and proxy port (3128) using HTTP and TCP filters.
+Tools: Wireshark
+
+![Wireshark HTTP Analysis](wireshark-http-analysis.png)
+![Wireshark Proxy Analysis](wireshark-proxy-analysis.png)
