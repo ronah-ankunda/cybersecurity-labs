@@ -18,9 +18,21 @@ Tools: AccessData FTK, FTK Imager
 
 Penetration Testing
 
-**Metasploitable2: SMB Exploitation**  
-Enumerated SMB with enum4linux, identified Samba 3.0.20-Debian, exploited CVE-2007-2447 for a reverse shell. Cracked password hashes with John the Ripper.  
+**Metasploitable2: SMB Exploitation**
+Performed unauthenticated SMB enumeration using enum4linux, discovering all user accounts, SIDs, and RIDs on the target. Used Nmap service scan to identify all open ports and vulnerable services including Samba 3.0.20-Debian, vsftpd 2.3.4, and MySQL 5.0.51a. Exploited CVE-2007-2447 (usermap_script) via Metasploit to gain a reverse shell. Cracked system password hashes using John the Ripper, recovering credentials for user, postgres, msfadmin, service, klog, and sys.
 Tools: Metasploit, Nmap, enum4linux, John the Ripper
+
+![SMB User Enumeration](metasploit-enumeration.png)
+![Nmap Service Scan](nmap-service-scan.png)
+![Cracked System Passwords](john-metasploit-hashes.png)
+
+**DVWA: Web Application Security Assessment**
+Exploited SQL injection vulnerabilities in DVWA running on Metasploitable2. Used union-based SQL injection to extract database version, usernames, and MD5 password hashes from the users table. Cracked extracted hashes using John the Ripper with the rockyou.txt wordlist, successfully recovering weak credentials.
+Tools: Kali Linux, DVWA, John the Ripper
+
+![SQL Injection Results](dvwa-sql-injection.png)
+![Password Hashes Extracted](dvwa-password-hashes.png)
+![John the Ripper Password Cracking](john-password-cracking.png)
 
 **DVWA: Web Application Security Assessment**
 Exploited SQL injection vulnerabilities in DVWA running on Metasploitable2. Used union-based SQL injection to extract database version, usernames, and MD5 password hashes from the users table. Cracked extracted hashes using John the Ripper with the rockyou.txt wordlist, successfully recovering passwords including common weak credentials.
