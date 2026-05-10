@@ -1,4 +1,4 @@
-# Cybersecurity Labs
+Cybersecurity Labs
 
 Hands-on security labs completed as part of my MSc in Cybersecurity at Hood College. Work spans digital forensics, penetration testing, network security, and security operations.
 
