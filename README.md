@@ -10,9 +10,9 @@ Digital Forensics
 Full investigation using AccessData FTK on the Clampet18.aff disk image. Identified primary suspect through browser cache artifacts, recovered moonshine recipes, a password-protected customer spreadsheet, and internet search history corroborating witness statements.  
 Tools: AccessData FTK, FTK Imager
 
-**Registry and User Account Analysis**  
-Exported SAM and SYSTEM registry files from the Washer.E01 image using FTK Imager. Analyzed user accounts and registry artifacts using Registry Viewer.  
-Tools: FTK Imager, Registry Viewer
+![FTK Evidence Tree](ftk-clampet.png)
+![Moonshine Search History](ftk-moonshine-search.png)
+![Moonshine Recipes Cache](ftk-moonshine-recipes.png)
 
 ---
 
